@@ -28,7 +28,7 @@ class CreateNewUser implements CreatesNewUsers
                 'max:100',
                 Rule::unique(User::class),
             ],
-            'phone' => ['required', 'numeric', 'digits:10', Rule::unique(User::class)],
+            'phone' => ['required', 'numeric', 'digits:11', Rule::unique(User::class)],
             'region' => ['required', 'exists:regions,id'],
             'township' => [ 'exists:townships,id'],
             'blood_group' => ['required', 'exists:blood_groups,id'],
