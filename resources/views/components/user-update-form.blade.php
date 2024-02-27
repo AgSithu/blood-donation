@@ -50,7 +50,9 @@
         <div>
             <label for="id_phone" class="form-label mt-3">{{ __('registerPage.phoneNumber') }}</label>
             <input dir="auto" data-validator-func="phoneValidator" type="text" name="phone" maxlength="11"
-                class="form-control" required id="id_phone" value="{{ Auth::user()->phone }}" />
+                class="form-control"
+                {{-- required id="id_phone" --}}
+                value="{{ Auth::user()->phone }}" />
             <div class="invalid-feedback">{{ __('registerPage.phoneNumberValidation') }}</div>
         </div>
 
