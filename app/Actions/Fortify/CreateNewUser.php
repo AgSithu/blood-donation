@@ -20,7 +20,9 @@ class CreateNewUser implements CreatesNewUsers
      */
     public function create(array $input)
     {
-        Validator::make($input, [
+        Validator::make(
+            $input,
+            [
             'email' => [
                 'required',
                 'string',
@@ -30,7 +32,7 @@ class CreateNewUser implements CreatesNewUsers
             ],
             'phone' => ['required', 'numeric', 'digits:11', Rule::unique(User::class)],
             'region' => ['required', 'exists:regions,id'],
-            'township' => [ 'exists:townships,id'],
+            'township' => ['required', 'exists:townships,id'],
             'blood_group' => ['required', 'exists:blood_groups,id'],
             'password' => $this->passwordRules(),
             'g-recaptcha-response' => 'required|captcha',
@@ -38,13 +40,14 @@ class CreateNewUser implements CreatesNewUsers
             [
                 'email.unique' => __('registerPage.alreadyUsedEmail'),
                 'phone.unique' => __('registerPage.alreadyUsedPhoneNumber'),
-            ])->validate();
+            ]
+        )->validate();
 
         return User::create([
             'email' => $input['email'],
             'phone' => $input['phone'],
             'region_id' => $input['region'],
-            'township_id' => $input['township'] ?? 1,
+            'township_id' => $input['township'],
             'blood_group_id' => $input['blood_group'],
             'password' => Hash::make($input['password']),
         ]);
