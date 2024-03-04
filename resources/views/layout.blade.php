@@ -27,6 +27,7 @@
     {{-- Localized Versions  --}}
     <link rel="alternate" href="{{ LaravelLocalization::getLocalizedURL('ar') }}" hreflang="ar" />
     <link rel="alternate" href="{{ LaravelLocalization::getLocalizedURL('fr') }}" hreflang="fr" />
+    <link rel="alternate" href="{{ LaravelLocalization::getLocalizedURL('en') }}" hreflang="en" />
 
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;600&family=Nunito:wght@600;700&display=swap"

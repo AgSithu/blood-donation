@@ -12,7 +12,7 @@ const getTownships = () => {
 
             if(lang === 'ar'){
                 townshipSelect.innerHTML = '<option selected hidden style="display:none" value="">الدائرة</option>';
-            } else if(lang === 'fr'){
+            } else if(lang === 'fr' || 'en'){
                 townshipSelect.innerHTML = '<option selected hidden style="display:none" value="">Township</option>';
             }
 
