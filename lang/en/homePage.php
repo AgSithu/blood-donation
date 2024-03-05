@@ -9,15 +9,15 @@
 */
 
 return [
-    'home' => 'Reception',
-    'donors' => 'List of donors',
+    'home' => 'Home',
+    'donors' => 'Donors List',
     'about' => 'About Us',
     'contact' => 'Contact',
-    'register' => 'I donate blood',
+    'register' => 'Donate Blood',
     'myAccount' => 'My Account',
-    'mainHeadLine' => "To give blood is to give life!",
+    'mainHeadLine' => "To give blood is To give life!",
     'subHeadLine' => 'Donating blood means helping to save 1 million lives each year, as this donation also includes platelet, plasma and placental blood.',
-    'secondCtaBtn' => 'Need for Blood',
+    'secondCtaBtn' => 'Need Blood',
     'findDonors' => 'Find Blood Donors Near You',
     'bloodGroup' => 'Blood type',
     'region' => 'Region',
