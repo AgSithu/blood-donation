@@ -33,6 +33,26 @@ class TownshipSeeder extends Seeder
             'name' => 'Taung Gyi',
             'region_id' => '05',
         ],
+        6 => [
+            'arName' => 'North Dagon',
+            'name' => 'North Dagon',
+            'region_id' => '01',
+        ],
+        7 => [
+            'arName' => 'San Chaung',
+            'name' => 'San Chaung',
+            'region_id' => '01',
+        ],
+        8 => [
+            'arName' => 'Latha',
+            'name' => 'Latha',
+            'region_id' => '01',
+        ],
+        9 => [
+            'arName' => 'Mayangon',
+            'name' => 'Mayangon',
+            'region_id' => '01',
+        ],
     ];
 
     public function run()

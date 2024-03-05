@@ -11,15 +11,56 @@ class UserSeeder extends Seeder
 {
     private $users = [
        [
-            'email' => 'test@gmail.com',
-            'phone' => '0511111111',
+            'email' => 'test1@gmail.com',
+            'phone' => '0911111111',
             'readyToGive' => true,
             // 'name' => 'test',
-            'password' => '$2y$10$RN5Qk1.fTvufax1KNDyKiuCgwrtjWWyB2V6cRXJaWBj4gys1msS3e',
+            'password' => '$2y$10$itg0K.FJPNS3sWrDSUrWJ.AdeQD/njoHQ1Y781T0TbkW4jor3rRqi',
             'region_id' => 1,
             'township_id' => 1,
-            'blood_group_id' => 6,
+            'blood_group_id' => 1,
        ],
+       [
+            'email' => 'test2@gmail.com',
+            'phone' => '0911111112',
+            'readyToGive' => true,
+            // 'name' => 'test',
+            'password' => '$2y$10$itg0K.FJPNS3sWrDSUrWJ.AdeQD/njoHQ1Y781T0TbkW4jor3rRqi',
+            'region_id' => 1,
+            'township_id' => 6,
+            'blood_group_id' => 2,
+       ],
+       [
+            'email' => 'test3@gmail.com',
+            'phone' => '0911111113',
+            'readyToGive' => true,
+            // 'name' => 'test',
+            'password' => '$2y$10$itg0K.FJPNS3sWrDSUrWJ.AdeQD/njoHQ1Y781T0TbkW4jor3rRqi',
+            'region_id' => 1,
+            'township_id' => 7,
+            'blood_group_id' => 3,
+       ],
+       [
+            'email' => 'test4@gmail.com',
+            'phone' => '0911111114',
+            'readyToGive' => true,
+            // 'name' => 'test',
+            'password' => '$2y$10$itg0K.FJPNS3sWrDSUrWJ.AdeQD/njoHQ1Y781T0TbkW4jor3rRqi',
+            'region_id' => 1,
+            'township_id' => 8,
+            'blood_group_id' => 4,
+       ],
+       [
+            'email' => 'test5.mandalay@gmail.com',
+            'phone' => '0911111115',
+            'readyToGive' => true,
+            // 'name' => 'test',
+            'password' => '$2y$10$itg0K.FJPNS3sWrDSUrWJ.AdeQD/njoHQ1Y781T0TbkW4jor3rRqi',
+            'region_id' => 2,
+            'township_id' => 2,
+            'blood_group_id' => 5,
+       ],
+
     ];
     // private $regions = [
     //    [
