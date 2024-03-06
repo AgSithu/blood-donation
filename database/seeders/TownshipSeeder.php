@@ -49,8 +49,8 @@ class TownshipSeeder extends Seeder
             'region_id' => '01',
         ],
         9 => [
-            'arName' => 'Mayangon',
-            'name' => 'Mayangon',
+            'arName' => 'Mayangone',
+            'name' => 'Mayangone',
             'region_id' => '01',
         ],
     ];
